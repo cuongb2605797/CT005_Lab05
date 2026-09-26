@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Trang giới thiệu cá nhân và các sản phẩm học tập CT005 Lab05">
+
+    <title>CT005 Lab05 - Sản phẩm học tập</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f9ff;
+            color: #10105f;
+            line-height: 1.6;
+        }
+
+        /* ===== HEADER ===== */
+
+        header {
+            background: linear-gradient(135deg, #10105f, #3faeb3);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        /* ===== CONTAINER ===== */
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* ===== GIỚI THIỆU ===== */
+
+        .intro {
+            background: white;
+            margin: 35px auto;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .info p {
+            background: #eef8ff;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        /* ===== SẢN PHẨM ===== */
+
+        .products {
+            margin: 40px auto;
+        }
+
+        .products h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .product {
+            background: white;
+            padding: 25px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .product h3 {
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .product p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #10105f;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #3faeb3;
+        }
+
+        /* ===== INFOGRAPHIC ===== */
+
+        .infographic-section {
+            background: white;
+            padding: 35px;
+            margin: 40px auto;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .infographic-section h2 {
+            margin-bottom: 25px;
+        }
+
+        .infographic {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        /* ===== VIDEO ===== */
+
+        .video-section {
+            background: white;
+            padding: 35px;
+            margin: 40px auto;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-section h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .video {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            aspect-ratio: 16 / 9;
+            margin: auto;
+        }
+
+        .video iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 12px;
+        }
+
+        /* ===== FOOTER ===== */
+
+        footer {
+            background: #10105f;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        /* ===== RESPONSIVE ===== */
+
+        @media (max-width: 768px) {
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            .info {
+                grid-template-columns: 1fr;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .intro,
+            .infographic-section,
+            .video-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <div class="container">
+
+            <h1>Xin chào! Tôi là [HỌ VÀ TÊN]</h1>
+
+            <p>
+                Sinh viên - Môn học CT005
+            </p>
+
+        </div>
+    </header>
+
+
+    <!-- ================= GIỚI THIỆU CÁ NHÂN ================= -->
+
+    <section class="container intro">
+
+        <h2>👨‍🎓 Giới thiệu cá nhân</h2>
+
+        <div class="info">
+
+            <p>
+                <strong>Họ và tên:</strong>
+                [HỌ VÀ TÊN]
+            </p>
+
+            <p>
+                <strong>Mã số sinh viên:</strong>
+                [MSSV]
+            </p>
+
+            <p>
+                <strong>Lớp:</strong>
+                [TÊN LỚP]
+            </p>
+
+            <p>
+                <strong>Trường:</strong>
+                [TÊN TRƯỜNG]
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= 3 SẢN PHẨM ================= -->
+
+    <section class="container products">
+
+        <h2>📚 Các sản phẩm đã thực hiện</h2>
+
+        <div class="product-grid">
+
+            <!-- SẢN PHẨM PDF -->
+
+            <div class="product">
+
+                <h3>📄 Nhiệm vụ 1.2</h3>
+
+                <p>
+                    File PDF của nhiệm vụ 1.2.
+                </p>
+
+                <a
+                    class="button"
+                    href="NhiemVu1.2.pdf"
+                    target="_blank">
+
+                    Xem file PDF
+
+                </a>
+
+            </div>
+
+
+            <!-- SẢN PHẨM PNG -->
+
+            <div class="product">
+
+                <h3>🖼️ Nhiệm vụ 2.1</h3>
+
+                <p>
+                    Infographic về lợi ích của công nghệ số
+                    trong học tập.
+                </p>
+
+                <a
+                    class="button"
+                    href="#infographic">
+
+                    Xem infographic
+
+                </a>
+
+            </div>
+
+
+            <!-- SẢN PHẨM HTML -->
+
+            <div class="product">
+
+                <h3>🌐 Nhiệm vụ 3.1</h3>
+
+                <p>
+                    Trang HTML hiển thị infographic
+                    và video YouTube.
+                </p>
+
+                <a
+                    class="button"
+                    href="Lab5_Ex3.1.html"
+                    target="_blank">
+
+                    Xem trang HTML
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= INFOGRAPHIC ================= -->
+
+    <section
+        id="infographic"
+        class="container infographic-section">
+
+        <h2>🖼️ Infographic - Lợi ích của công nghệ số trong học tập</h2>
+
+        <!--
+            Đổi "infographic.png" thành đúng tên
+            file PNG của bạn trong GitHub.
+        -->
+
+        <img
+            class="infographic"
+            src="infographic.png"
+            alt="Infographic Lợi ích của công nghệ số trong học tập">
+
+        <p style="margin-top: 15px;">
+            <strong>
+                Lợi ích của công nghệ số trong học tập:
+            </strong>
+            tiếp cận kho kiến thức rộng lớn,
+            học tập cá nhân hóa,
+            tăng tương tác và hợp tác,
+            học mọi lúc mọi nơi.
+        </p>
+
+    </section>
+
+
+    <!-- ================= VIDEO YOUTUBE ================= -->
+
+    <section class="container video-section">
+
+        <h2>🎥 Video YouTube</h2>
+
+        <div class="video">
+
+            <iframe
+                src="https://www.youtube.com/embed/JLgMxttSHjo"
+                title="Video YouTube về công nghệ số trong học tập"
+                allow="accelerometer;
+                       autoplay;
+                       clipboard-write;
+                       encrypted-media;
+                       gyroscope;
+                       picture-in-picture;
+                       web-share"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <p style="text-align:center; margin-top:15px;">
+
+            <a
+                href="https://youtu.be/JLgMxttSHjo"
+                target="_blank">
+
+                Mở video trực tiếp trên YouTube
+
+            </a>
+
+        </p>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 - CT005 Lab05
+        </p>
+
+        <p>
+            Trang web được thực hiện với sự hỗ trợ của AI / GitHub Copilot.
+        </p>
+
+    </footer>
+
+</body>
+</html>
