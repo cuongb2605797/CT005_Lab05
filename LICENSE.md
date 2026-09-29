@@ -1,4 +1,4 @@
-Copyright <2026> <Trần Phú Cường>
+Copyright <2026> <COPYROGHT Trần Phú Cường>
 
 
 
